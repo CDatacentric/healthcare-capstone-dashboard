@@ -1,122 +1,228 @@
-# Healthcare Capstone Dashboard
+# Healthcare Performance Dashboard | Excel Data Analytics Capstone
 
-# Project Overview
+> An end-to-end Excel data analytics project focused on evaluating the operational and financial performance of **St. Mary's Healthcare Group** through data cleaning, exploratory analysis, dashboard development, and business reporting.
 
-This project was completed as part of my Data Analytics learning journey and capstone presentation. The objective was to analyze healthcare operational data, identify key performance trends, develop an interactive dashboard, and provide actionable business recommendations based on data-driven insights.
+---
 
-The project demonstrates my practical skills in data cleaning, feature engineering, KPI development, dashboard design, reporting, and analytical storytelling using Microsoft Excel.
+## Project Overview
 
-# Business Objective
+This project was completed as part of my Data Analytics learning journey to simulate a real-world business analysis scenario.
 
-The healthcare organization required an analysis of patient admissions, treatment costs, hospital performance, patient satisfaction, and operational efficiency.
+Using healthcare operational data from **January 2024 to December 2025**, I cleaned and transformed the dataset, developed key performance indicators (KPIs), built an interactive dashboard, and carried out exploratory analysis to identify trends, evaluate performance, and provide business recommendations.
 
-The goal was to transform raw healthcare data into meaningful insights that support better decision-making and improve overall healthcare performance.
+Rather than stopping after building the dashboard, I explored additional business questions to better understand the factors influencing hospital performance, including city performance, payment methods, physician performance, patient age groups, severity levels, and length of stay.
 
-# Tools Used
-  * Microsoft Excel
-  * Power Query
-  * Pivot Tables
-  * Pivot Charts
-  * KPI Development
-  * Dashboard Design
-  * Data Visualization
-  * Business Reporting
+---
 
+## Problem Statement
 
-# Project Workflow
+St. Mary's Healthcare Group needed to evaluate its operational and financial performance using historical patient data collected between **January 2024 and December 2025**.
 
-# 1. Data Understanding
+Management required visibility into key performance indicators such as revenue, patient admissions, length of stay, and patient satisfaction to determine whether organizational targets were being achieved.
 
-Reviewed the dataset structure and identified patient information, operational metrics, financial metrics, and healthcare performance indicators.
+The objective of this project was not only to build an interactive Excel dashboard but also to investigate the factors influencing hospital performance, uncover meaningful findings, and provide practical recommendations that could support better operational and strategic decision-making.
 
-# 2. Data Cleaning
+---
 
-Performed data cleaning and restructuring using Excel and Power Query to improve consistency, remove errors, and prepare the dataset for analysis.
+# Dashboard Preview
 
-# 3. Feature Engineering
+> *(Insert dashboard screenshot here)*
 
-Created calculated columns and additional metrics required for KPI tracking and business analysis.
+---
 
-# 4. Exploratory Analysis
+## Tools Used
 
-Used Pivot Tables and Pivot Charts to identify trends, patterns, and performance indicators across multiple dimensions.
+### Software
 
-# 5. Dashboard Development
+- Microsoft Excel
+- Power Query
+- Pivot Tables
+- Pivot Charts
+- Slicers
+- Conditional Formatting
+- XLOOKUP
 
-Designed and built an interactive healthcare dashboard featuring KPI cards, visualizations, slicers, and performance tracking metrics.
+### Analytical Skills
 
-# 6. Reporting & Presentation
+- Data Cleaning
+- Data Transformation
+- Feature Engineering
+- KPI Development
+- Exploratory Data Analysis (EDA)
+- Dashboard Design
+- Data Visualization
+- Business Reporting
+- Analytical Storytelling
 
-Prepared a formal business report and presentation highlighting insights, findings, recommendations, and improvement opportunities.
+---
 
+# Methodology
 
-# Key Insights
-  * Total Revenue exceeded £6 million.
-  * Average Length of Stay exceeded organizational targets.
-  * Patient Satisfaction was below expected performance levels.
-  * Revenue performance varied significantly across cities.
-  * Longer patient stays generated higher revenue but increased operational burden.
-  * Additional exploratory analysis was conducted on age, severity levels, and city performance.
+The project followed a structured data analysis workflow.
 
+### 1. Understanding the Dataset
 
-# Skills Demonstrated
-  * Data Cleaning
-  * Data Transformation
-  * Power Query
-  * KPI Development
-  * Dashboard Design
-  * Pivot Tables
-  * Data Visualization
-  * Analytical Storytelling
-  * Business Reporting
-  * Presentation Development
+- Reviewed the dataset structure
+- Identified patient information and business-related fields
+- Defined the business questions to answer
 
+### 2. Data Cleaning & Preparation
+
+Using Power Query, I:
+
+- Removed duplicate records
+- Handled missing values
+- Corrected inconsistent text entries
+- Standardized formats
+- Assigned appropriate data types
+- Prepared the dataset for analysis
+
+### 3. Feature Engineering
+
+Created additional calculated columns including:
+
+- Total Cost
+- Length of Stay
+- Cost Per Day
+- Admission Month
+- Admission Year
+- Admission Month & Year
+- Day of the Week
+- Age Group
+- Length of Stay Category
+
+### 4. Exploratory Data Analysis
+
+Used Pivot Tables to:
+
+- Build KPIs
+- Compare diagnosis performance
+- Analyze city performance
+- Evaluate doctor performance
+- Compare payment methods
+- Analyze severity levels
+- Explore patient length of stay
+
+### 5. Dashboard Development
+
+Developed an interactive dashboard containing:
+
+- KPI Cards
+- Pivot Charts
+- Diagnosis Slicer
+- Navigation Buttons
+- Performance Metrics
+
+The dashboard layout was inspired by a healthcare dashboard on Dribbble and redesigned to match the objectives and KPIs of this project.
+
+### 6. Reporting
+
+Prepared a business report summarizing:
+
+- Findings
+- Insights
+- Recommendations
+- Management presentation
+
+---
+
+# Key Findings
+
+### Dashboard Findings
+
+- Total Revenue reached **£6,454,834**, achieving **92.21%** of the planned target.
+- Total Patient Admissions reached **500**, representing **76.92%** of the planned target.
+- Average Length of Stay was **10.71 days**, exceeding the target of **5 days**.
+- Average Patient Satisfaction scored **5.31 / 10**, below the target score of **7**.
+- Asthma recorded the highest admissions (**65**) and generated the highest revenue (**£805,568**).
+
+---
+
+### Exploratory Analysis
+
+Further investigation revealed that:
+
+- Long Stay patients generated the highest revenue due to having the highest patient volume.
+- Sheffield generated the highest revenue per patient despite London producing the highest overall revenue.
+- Elder patients recorded the same number of Critical cases as Adults despite a much smaller population.
+- Private payment patients had the longest hospital stays and the lowest satisfaction scores.
+- Dr. Taylor achieved the highest patient satisfaction while maintaining one of the shortest average lengths of stay.
+- Medium and High severity patients generated more revenue than Critical patients because of higher patient volume.
+
+---
+
+# Recommendations
+
+Based on the analysis, I recommended the following actions:
+
+- Increase patient admissions through stronger referral partnerships and community outreach.
+- Review discharge planning and treatment workflows to reduce unnecessary patient stays.
+- Improve patient experience by acting on patient feedback.
+- Study high-performing cities to identify practices that can be replicated elsewhere.
+- Strengthen preventive care for older patients.
+- Review payment workflows and encourage knowledge sharing among physicians to improve patient outcomes.
+
+---
 
 # Repository Structure
-  raw-data/
-  cleaned-data/
-  dashboard/
-  report/
-  presentation/
-  images/
 
+```
+Healthcare-Capstone/
+│
+├── data/
+│   ├── Raw Dataset.xlsx
+│   └── Cleaned Dataset.xlsx
+│
+├── dashboard/
+│   └── Healthcare Dashboard.xlsx
+│
+├── report/
+│   └── St Mary's Healthcare Report.pdf
+│
+├── presentation/
+│   └── Capstone Presentation.pptx
+│
+├── images/
+│   ├── dashboard-preview.png
+│   ├── pivot-table-analysis.png
+│   ├── power-query-cleaning.png
+│   └── presentation-preview.png
+│
+└── README.md
+```
 
-# Files Included
+---
 
-# Raw Data
-  Original dataset provided for analysis.
+# 📁 Files Included
 
-# Cleaned Data
-  Prepared dataset after cleaning and transformation.
+| Folder | Description |
+|----------|-------------|
+| **data** | Raw and cleaned datasets used during the project |
+| **dashboard** | Interactive Excel dashboard |
+| **report** | Business analysis report |
+| **presentation** | Capstone presentation slides |
+| **images** | Dashboard and project screenshots |
 
-# Dashboar
-  Interactive healthcare dashboard workbook.
+---
 
-# Report
-  Detailed analysis report containing findings and recommendations.
+# Lessons Learned
 
-# Presentation
-  Capstone presentation slides.
+Working on this project changed the way I approach data analysis.
 
-# Images
-Screenshots of dashboards, charts, and project visuals.
+Instead of treating dashboards as the final deliverable, I learned that they are only one part of the analytical process. The real value comes from asking meaningful business questions, investigating the factors behind the numbers, and communicating findings in a way that supports better decision-making.
 
+This project also strengthened my skills in data cleaning, exploratory analysis, dashboard design, business reporting, and presenting analytical findings to different audiences.
 
-
-# Learning Reflection
-
-This project significantly improved my confidence in data analysis, dashboard development, KPI creation, and presenting analytical findings to an audience.
-
-It also highlighted areas for future improvement, including deeper statistical analysis, more advanced storytelling techniques, and stronger executive-level reporting.
-
+---
 
 # Author
 
-# Chukwuemeka Onyekaodiri
-Data Analyst | Cloud Data Analytics Enthusiast
+**Chukwuemeka Onyekaodiri**
 
-# Portfolio Website:
+Data Analyst | Excel • SQL • Power BI • Python
+
+🌐 Portfolio Website  
 https://www.chukwuemekaonyekaodiri.com
 
-# GitHub:
+💼 GitHub  
 https://github.com/CDatacentric
