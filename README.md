@@ -26,7 +26,7 @@ The objective of this project was not only to build an interactive Excel dashboa
 
 # Dashboard Preview
 
-> *(Insert dashboard screenshot here)*
+![Healthcare Dashboard](images/dashboard-preview.png)
 
 ---
 
